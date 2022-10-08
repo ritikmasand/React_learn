@@ -53,3 +53,24 @@ h6 {
   font-size: 250%;
   /* font-weight: bold; */
 }
+nav {
+  height: 2.5rem;
+  background-color: var(--white);
+  padding: 0.1 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+nav > h2 {
+  display: inline;
+}
+nav > a {
+  float: right;
+  text-decoration: none;
+  padding-top: 4px;
+}
+.search {
+  text-align: center;
+  margin: 1rem;
+}
+.search > input {
+  border-radius: 0.3rem;
+}

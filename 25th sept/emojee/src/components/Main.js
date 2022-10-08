@@ -27,9 +27,10 @@ const Main = () => {
   }, [keyword]);
   return (
     <main>
-      <h2>Main-Section</h2>
-      <input type="text" placeholder="search 🔎" onKeyUp={typed} />
-      <h3>Result for -{keyword}</h3>
+      <div className="search">
+        <input type="text" placeholder="search 🔎" onKeyUp={typed} />
+        {keyword === "" ? false : <h3>Result for -{keyword}</h3>}
+      </div>
       <hr />
       {list.length === 0 ? (
         <p>No emoji found</p>
