@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav>
+    <nav className="maintitle">
       <h2 className="title">Emojee</h2>
       <a href="/" target="_blank">
         Github

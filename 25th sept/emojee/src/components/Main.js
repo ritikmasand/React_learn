@@ -12,6 +12,9 @@ const Main = () => {
   useEffect(() => {
     const filterList = emojiList.filter((singleemoji) => {
       // console.log(singleemoji);
+      if (singleemoji.emoji === keyword) {
+        return true;
+      }
       if (singleemoji.description.startsWith(keyword)) {
         return true;
       }
@@ -33,7 +36,7 @@ const Main = () => {
       </div>
       <hr />
       {list.length === 0 ? (
-        <p>No emoji found</p>
+        <h3 className="no-result ">No emoji found 😔</h3>
       ) : (
         <EmojiContainer filteredlist={list} />
       )}
